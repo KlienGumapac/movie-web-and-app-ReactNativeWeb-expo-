@@ -84,6 +84,26 @@ src/
 - Node.js (v16 or higher)
 - npm or yarn
 - Expo CLI
+- TMDB API credentials
+
+### TMDB API Setup
+
+1. **Get TMDB API Credentials**
+
+   - Visit [TMDB](https://www.themoviedb.org/settings/api)
+   - Create an account and request API access
+   - Get your API Key and Read Access Token
+
+2. **Configure API Credentials**
+
+   ```bash
+   # Copy the template file
+   cp src/constants/api.template.ts src/constants/api.ts
+
+   # Edit the file and add your credentials
+   # Replace YOUR_TMDB_API_KEY_HERE with your actual API key
+   # Replace YOUR_TMDB_READ_ACCESS_TOKEN_HERE with your actual access token
+   ```
 
 ### Installation
 
@@ -100,7 +120,9 @@ src/
    npm install
    ```
 
-3. **Start the development server**
+3. **Configure API (see TMDB API Setup above)**
+
+4. **Start the development server**
 
    ```bash
    # For web

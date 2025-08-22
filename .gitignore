@@ -33,5 +33,8 @@ yarn-error.*
 # local env files
 .env*.local
 
+# API configuration (contains sensitive credentials)
+src/constants/api.ts
+
 # typescript
 *.tsbuildinfo
